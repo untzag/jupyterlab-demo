@@ -4,5 +4,5 @@
 jupyter lab workspaces import ${REPO_DIR}/binder/workspace.json
 
 # run daemons
-yaqd-fake-continuous-hardware --config ${REPO_DIR}/binder/yaqd-fake-continuous-hardware-config.toml &>/dev/null &
+yaqd-fake-continuous-hardware --config ${REPO_DIR}/binder/fake-continuous-hardware-config.toml &>/dev/null &
 disown
