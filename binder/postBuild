@@ -2,3 +2,7 @@
 
 # import the workspace into JupyterLab
 jupyter lab workspaces import binder/workspace.json
+
+# run daemons
+yaqd-continuous-hardware --config ${REPO_DIR}/binder/yaqd-continuous-hardware-config.toml &>/dev/null &
+disown
